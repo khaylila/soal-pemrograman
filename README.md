@@ -1,2 +1,2 @@
 # gb-python
-game bosting python
+gb soal soal bahasa python
