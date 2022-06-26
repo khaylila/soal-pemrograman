@@ -1,2 +1,2 @@
 # gb-python
-gb soal soal bahasa python
+reserved for README
