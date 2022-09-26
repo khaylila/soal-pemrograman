@@ -31,6 +31,12 @@ public class SoalJoko {
     }
 
     private static boolean checkKabisat(int tahun) {
+        if (tahun % 100 == 0) {
+            if (tahun % 400 == 0) {
+                return true;
+            }
+            return false;
+        }
         if (tahun % 4 == 0) {
             return true;
         }
@@ -42,7 +48,18 @@ public class SoalJoko {
             if (bulan == 2) {
                 return 29;
             } else {
-                return 28;
+                switch (bulan) {
+                    case 1:
+                    case 3:
+                    case 5:
+                    case 7:
+                    case 8:
+                    case 10:
+                    case 12:
+                        return 31;
+                    default:
+                        return 30;
+                }
             }
         } else {
             switch (bulan) {
@@ -54,6 +71,8 @@ public class SoalJoko {
                 case 10:
                 case 12:
                     return 31;
+                case 2:
+                    return 28;
                 default:
                     return 30;
             }
