@@ -1,3 +1,5 @@
+// https://github.com/khaylila/soal-pemrograman/blob/main/SoalJoko.java
+
 import java.util.Scanner;
 
 public class SoalJoko {
