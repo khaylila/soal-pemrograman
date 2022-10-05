@@ -24,6 +24,10 @@ public class GanjilGenap {
         // }
     }
 
+    // private boolean checkBilangan() {
+    // return false;
+    // }
+
     private boolean checkBilangan(Integer bilangan) {
         if (bilangan % 2 == 0) {
             return true;
