@@ -8,9 +8,7 @@ public class tugasKelompok {
         Scanner scan = new Scanner(System.in);
         int makanan = 0, minuman = 0, count = 0;
         String namaMakanan, namaMinuman;
-        for (int i = 0; i < 20; i++) {
-            System.out.println(i);
-        }
+
         listMenu();
 
         while (makanan < 1 || makanan > 5) {
@@ -30,6 +28,7 @@ public class tugasKelompok {
             minuman = scan.nextInt();
             count++;
         }
+        scan.close();
 
         if (makanan == 1) {
             namaMakanan = "Nasi Ayam Goreng";
@@ -57,10 +56,9 @@ public class tugasKelompok {
         System.out.print(
                 "Makanan yang anda pilih adalah " + namaMakanan + " dan minuman yang dipilih adalah " + namaMinuman);
         System.out.println("");
-
     }
 
-    public static void listMenu() {
+    private static void listMenu() {
         System.out.println("~~~ Selamat datang di warung ayam kami ~~~");
         System.out.println("Menu Makanan (masukkan angka 1-5): ");
         System.out.println("1. Nasi Ayam goreng");

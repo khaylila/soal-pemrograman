@@ -18,7 +18,7 @@ public class segitiga {
         int ceil = (int) Math.ceil(deretSamping / 2.0);
         for (int i = 0; i < tingkatan; i++) {
             for (int j = 1; j <= deretSamping; j++) {
-                if ((j >= (ceil - i) && j <= (ceil + i)) || j == ceil) {
+                if ((j >= (ceil - i) && j <= (ceil + i))) {
                     System.out.print("* ");
                 } else {
                     System.out.print("  ");
@@ -26,5 +26,6 @@ public class segitiga {
             }
             System.out.println("");
         }
+        scan.close();
     }
 }
