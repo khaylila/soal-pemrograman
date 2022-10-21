@@ -2,31 +2,27 @@ package array.tugas;
 
 import java.util.Scanner;
 
-public class TokoKomputer {
+public class TokoKaset {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
         String[][] listProduct = {
-                { "Printer", "1500000" },
-                { "Monitor", "1000000" },
-                { "Keyboard", "100000" },
-                { "Mouse", "50000" },
-                { "SSD 120GB", "300000" },
-                { "Ryzen 3", "2000000" },
-                { "RAM DDR4 2x4", "800000" },
-                { "MotherBoard", "1000000" },
-                { "Casing", "350000" },
-                { "Power Supply", "500000" },
-                { "Kabel Lan 5 Meter", "20000" },
-                { "Router", "150000" },
-                { "Kabel Sata", "10000" },
+                { "Sheila on 7 - Subtitle (1999)", "50000" },
+                { "Sheila on 7 - Kisah Klasik Untuk Masa Depan (2000)", "60000" },
+                { "Sheila on 7 - 07 Des (2002)", "70000" },
+                { "Sheila on 7 - Ost. 30 Hari Mencari Cinta (2003)", "80000" },
+                { "Sheila on 7 - Pejantan Tangguh (2004)", "90000" },
+                { "Sheila on 7 - 507 (2006)", "100000" },
+                { "Sheila on 7 - Menentukan Arah (2008)", "110000" },
+                { "Sheila on 7 - Berlayar (2011)", "110000" },
+                { "Sheila on 7 - Musim Yang Baik (2014)", "120000" },
         };
         int[] products = {};
         boolean loop = true, productAlready = false;
         int temp = 0, hargaBeli = 0;
 
-        System.out.println("~~~Selamat datang di toko Pemuja Rahasia~~~");
-        System.out.println("List Produk Kami:");
+        System.out.println("~~~ Selamat datang di toko Lihat, Dengar Rasakan ~~~");
+        System.out.println("List kaset yang tersedia:");
         for (int i = 1; i <= listProduct.length; i++) {
             System.out.println(i + ". " + listProduct[i - 1][0] + " seharga Rp" + listProduct[i - 1][1]);
         }
@@ -34,7 +30,7 @@ public class TokoKomputer {
 
         while (loop) {
             int count = 0;
-            while (temp < 1 || temp > 13 || productAlready == true) {
+            while (temp < 1 || temp > listProduct.length || productAlready == true) {
                 if (count > 0) {
                     if (productAlready) {
                         System.out.println("Produk telah dipilih sebelumnya!");
@@ -68,7 +64,7 @@ public class TokoKomputer {
             hargaBeli += Integer.parseInt(listProduct[products[i - 1]][1]);
         }
         System.out.println("Dengan total harga sejumlah Rp" + hargaBeli);
-        System.out.println("Terimakasih telah berkunjung ke toko kami :d");
+        System.out.println("Terimakasih telah berkunjung ke toko kami #sampaiJumpaDiKehidupanYangLain");
 
         scan.close();
     }
