@@ -13,6 +13,7 @@ public class apel {
         if (namaBuah.equals("apel")) {
             System.out.println("Sukses! :d");
         }
+        scan.close();
     }
 
 }

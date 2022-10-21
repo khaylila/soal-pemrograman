@@ -52,5 +52,6 @@ public class getBulan {
                 break;
         }
         System.out.println("Urutan bulan ke " + urutanBulan + " adalah bulan " + bulan);
+        scan.close();
     }
 }

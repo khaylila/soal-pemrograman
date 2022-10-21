@@ -15,5 +15,6 @@ public class ganjilGenap {
         } else {
             System.out.println("Angka " + inputAngka + " adalah bilangan genap");
         }
+        scan.close();
     }
 }
