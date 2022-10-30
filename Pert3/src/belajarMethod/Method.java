@@ -12,7 +12,7 @@ public class Method {
         // System.out.println(methodPerkalian());
     }
 
-    private String methodPerkalian() {
+    public String methodPerkalian() {
         int a = 2, b = 3, c = a * b;
         String s = "Hasil dari a x b = " + c;
         return s;

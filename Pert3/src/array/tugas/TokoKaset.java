@@ -1,5 +1,6 @@
 package array.tugas;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class TokoKaset {
@@ -12,6 +13,7 @@ public class TokoKaset {
                 { "Sheila on 7 - 07 Des (2002)", "70000" },
                 { "Sheila on 7 - Ost. 30 Hari Mencari Cinta (2003)", "80000" },
                 { "Sheila on 7 - Pejantan Tangguh (2004)", "90000" },
+                { "Sheila on 7 - Jalan Terus (2005)", "95000" },
                 { "Sheila on 7 - 507 (2006)", "100000" },
                 { "Sheila on 7 - Menentukan Arah (2008)", "110000" },
                 { "Sheila on 7 - Berlayar (2011)", "110000" },
@@ -46,10 +48,12 @@ public class TokoKaset {
                 }
                 count++;
             }
-            products = productCheckOut(products, temp);
+            products = productCheckOut(products, (temp - 1));
             temp = 0;
             System.out.print("Lanjutkan?(y/n): ");
             // https://www.reddit.com/r/learnjava/comments/fbhzf3/problems_with_nextline_not_waiting_for_user_input/
+            // https://stackoverflow.com/questions/69734154/scanner-doesnt-wait-for-input-when-i-used-nextline-after-using-nextint-is-it
+            // https://www.reddit.com/r/javahelp/wiki/scanner/
             scan.nextLine();
             String addMore = scan.nextLine();
             if (addMore.equalsIgnoreCase("n")) {
@@ -83,7 +87,7 @@ public class TokoKaset {
 
     private static boolean productAlready(int[] products, int newProduct) {
         for (int product : products) {
-            if (product == newProduct) {
+            if (product == (newProduct - 1)) {
                 return true;
             }
         }
