@@ -1,4 +1,4 @@
-package array.pertSepuluh.tugas;
+package pertSepuluh.tugas;
 
 import java.util.Scanner;
 

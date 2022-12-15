@@ -9,7 +9,7 @@ public class doraemon {
 
     public static void main(String[] args) {
 
-        ArrayList kantongAjaib = new ArrayList<>();
+        ArrayList kantongAjaib = new ArrayList<String>();
         // arr.add("Hujan Truru");
         // System.out.println(arr.get(0));
 
@@ -18,11 +18,10 @@ public class doraemon {
 
         // Mengisi kantong ajaib dengan 5 benda
         kantongAjaib.add("Senter Pembesar");
-        kantongAjaib.add(532);
+        kantongAjaib.add("532");
         kantongAjaib.add("tikus");
-        kantongAjaib.add(1231234.132);
+        kantongAjaib.add("1231234.132");
         kantongAjaib.add(true);
-
         // menghapus tikus dari kantong ajaib
         kantongAjaib.remove("tikus");
 
